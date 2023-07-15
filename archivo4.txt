@@ -1,0 +1,558 @@
+
+204@204-18 MINGW64 ~/Desktop/python
+$ git init
+Initialized empty Git repository in C:/Users/204/Desktop/python/.git/
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ code .
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        codigo1.txt
+        index.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status -s
+?? codigo1.txt
+?? index.py
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git commit -m "My first proyect the python"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        codigo1.txt
+        index.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git commit -m "My first proyect the python"
+[master (root-commit) 84579ff] My first proyect the python
+ 2 files changed, 4 insertions(+)
+ create mode 100644 codigo1.txt
+ create mode 100644 index.py
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.py
+
+
+204@204-18 MINGW64 ~/Desktop/python (master)
+$ git remote add origin https://github.com/santiagojaramillo12345/pytoh.git
+git branch -M main
+git push -u origin main
+remote: Permission to santiagojaramillo12345/pytoh.git denied to sergioceballos02.
+fatal: unable to access 'https://github.com/santiagojaramillo12345/pytoh.git/': The requested URL returned error: 403
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git push -u origin main
+remote: Permission to santiagojaramillo12345/pytoh.git denied to sergioceballos02.
+fatal: unable to access 'https://github.com/santiagojaramillo12345/pytoh.git/': The requested URL returned error: 403
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git config credential.helper ""
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git remote add origin https://github.com/santiagojaramillo12345/pytoh.git
+error: remote origin already exists.
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git branch -M main
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git remote add origin https://github.com/santiagojaramillo12345/pytoh.git
+git branch -M main
+git push -u origin main
+error: remote origin already exists.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 322 bytes | 322.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/santiagojaramillo12345/pytoh.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.py
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.py
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit -m "actualizacion"
+[main f8956e2] actualizacion
+ 1 file changed, 1 insertion(+)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit -m "actualizacion"
+[main 7afce1e] actualizacion
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ push
+bash: push: command not found
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 631 bytes | 631.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/santiagojaramillo12345/pytoh.git
+   84579ff..7afce1e  main -> main
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit
+[main 30c88ff] index.py
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ rm index.py
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ status
+bash: status: command not found
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    index.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit -m "el archivo a sido eliminado"
+[main 90d80e6] el archivo a sido eliminado
+ 1 file changed, 6 deletions(-)
+ delete mode 100644 index.py
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ mv codigo1.txt archivo1.txt
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add codigo1.txt archivo1.txt
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    codigo1.txt -> archivo1.txt
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit
+[main 997d8f0] se cambia el nombre
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename codigo1.txt => archivo1.txt (100%)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ status
+bash: status: command not found
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        privado.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .gitignore
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit -m "archivo ingnorado que pesar "
+[main 443645e] archivo ingnorado que pesar
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git diff
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .archivo2
+fatal: pathspec '.archivo2' did not match any files
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   archivo2.txt
+        new file:   index.py
+
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git diff
+diff --git a/archivo2.txt b/archivo2.txt
+index 32418dd..04bf57d 100644
+--- a/archivo2.txt
++++ b/archivo2.txt
+@@ -1 +1 @@
+-lo que quieran
+\ No newline at end of file
++lo que quieran otra cosa
+\ No newline at end of file
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git brach
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git checkout -b pegadas
+Switched to a new branch 'pegadas'
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git add *archivo2
+fatal: pathspec '*archivo2' did not match any files
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git add .
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git commit -m "funcion"
+[pegadas 1900bb9] funcion
+ 2 files changed, 6 insertions(+)
+ create mode 100644 archivo2.txt
+ create mode 100644 index.py
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git diff
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ cat archivo2.txt
+lo que quieran otra cosa
+lo que usted desee
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ ^C
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add archivo2.txt
+fatal: pathspec 'archivo2.txt' did not match any files
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add archivo2.txt
+fatal: pathspec 'archivo2.txt' did not match any files
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git checkout ^C
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git checkout pegadas
+Switched to branch 'pegadas'
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout Master
+error: pathspec 'Master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+204@204-18 MINGW64 ~/Desktop/python (pegadas)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add archivo2.txt
+fatal: pathspec 'archivo2.txt' did not match any files
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git add archivo2.txt
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git commit -m "añadir cm"
+[main eee0a42] añadir cm
+ 1 file changed, 2 insertions(+)
+ create mode 100644 archivo2.txt
+
+204@204-18 MINGW64 ~/Desktop/python (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
